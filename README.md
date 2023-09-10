@@ -42,7 +42,7 @@ To test the browser build, pass the `apiHost` parameter when instantiating. An e
 
 ```jsx
 // Import Astrolabe SDK:
-import { AnalyticsBrowser } from "@astrolabe/analytics-next";
+import { AnalyticsBrowser } from "@astrolabe-ai/analytics-next";
 
 // Near the entrypoint of your app, instantiate AnalyticsBrowser:
 let [analytics] = await AnalyticsBrowser.load({
@@ -57,7 +57,7 @@ To test the Node build, pass the `apiHost` and `httpScheme` parameter when insta
 
 ```jsx
 // Import Astrolabe SDK:
-import { AnalyticsNode } from "@astrolabe/analytics-next";
+import { AnalyticsNode } from "@astrolabe-ai/analytics-next";
 
 // Instantiate AnalyticsNode:
 const [nodeAnalytics] = await AnalyticsNode.load({
@@ -81,7 +81,7 @@ const [nodeAnalytics] = await AnalyticsNode.load({
             script.onload = function () {
                 window.analytics.page();
             }
-            script.src = "https://unpkg.com/@astrolabe/analytics-next/dist/umd/standalone.js";
+            script.src = "https://unpkg.com/@astrolabe-ai/analytics-next/dist/umd/standalone.js";
             var first = document.getElementsByTagName('script')[0];
             first.parentNode.insertBefore(script, first);
         }

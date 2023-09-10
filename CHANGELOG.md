@@ -1,4 +1,4 @@
-# @astrolabe/analytics-next
+# @astrolabe-ai/analytics-next
 
 ## 1.51.0
 

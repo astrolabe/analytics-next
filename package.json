@@ -1,5 +1,5 @@
 {
-  "name": "@astrolabe/analytics-next",
+  "name": "@astrolabe-ai/analytics-next",
   "version": "1.0.0",
   "license": "MIT",
   "main": "./dist/cjs/index.js",
