@@ -9,8 +9,12 @@ help: ## Lists all available make tasks and some short documentation about them
 ## Basic repo maintenance
 
 # Installs npm dependencies
+# node_modules:
+# 	yarn set version self
+# 	yarn install --immutable
+# 	@touch $@
 node_modules:
-	yarn set version self
+	yarn set version 3.2.1
 	yarn install --immutable
 	@touch $@
 
