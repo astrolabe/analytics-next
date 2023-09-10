@@ -14,7 +14,6 @@ help: ## Lists all available make tasks and some short documentation about them
 # 	yarn install --immutable
 # 	@touch $@
 node_modules:
-	yarn set version 3.2.1
 	yarn install --immutable
 	@touch $@
 
@@ -22,9 +21,14 @@ build-browser: build # build dependencies
 	$(yarn_run) umd --no-stats
 .PHONY: build-browser
 
+# build: ## Builds libraries in prod mode, and all dependencies
+# 	yarn run -T browser+deps build
+# .PHONY: build
+
 build: ## Builds libraries in prod mode, and all dependencies
-	yarn run -T browser+deps build
+	yarn run -T browser build
 .PHONY: build
+
 
 clean: ## Clean the build directory
 	rm -rf dist generated
