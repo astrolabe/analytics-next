@@ -33,8 +33,7 @@
     "cjs": "tsc -p tsconfig.build.json --outDir ./dist/cjs --module commonjs",
     "clean": "rm -rf dist",
     "lint": "yarn concurrently 'yarn:eslint .' 'yarn:tsc --noEmit'",
-    "test": "yarn jest",
-    "browser": "yarn workspace @astrolabe/analytics-next"
+    "test": "yarn jest"
   },
   "size-limit": [
     {

@@ -26,7 +26,7 @@ build-browser: build # build dependencies
 # .PHONY: build
 
 build: ## Builds libraries in prod mode, and all dependencies
-	yarn run -T browser build
+	yarn run build
 .PHONY: build
 
 
