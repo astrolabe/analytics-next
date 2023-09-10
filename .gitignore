@@ -1,0 +1,7 @@
+/node_modules/
+/dist/
+.DS_Store
+*.log
+stats.json
+/coverage
+e2e-tests/data/requests/*.json
